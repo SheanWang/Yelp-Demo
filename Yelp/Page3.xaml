@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Yelp.Page1"
+    x:Class="Yelp.Page3"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -25,15 +25,21 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image Height="694" VerticalAlignment="Top" HorizontalAlignment="Left" Width="456" Source="/Assets/Page1New.png" Stretch="Fill" Margin="0,-42,0,0"/>
-            <TextBlock x:Name="Location1" HorizontalAlignment="Left" Margin="239,693,0,-6" TextWrapping="Wrap" Text="1 km" VerticalAlignment="Top" Height="36" Width="49"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="217*"/>
+                <ColumnDefinition Width="239*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Right" Height="695" VerticalAlignment="Top" Width="456" Source="/Assets/Page3New.png" Stretch="Fill" Margin="0,-41,0,0" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="Location1" HorizontalAlignment="Left" Margin="21.659,693,0,-6" TextWrapping="Wrap" Text="1 km" VerticalAlignment="Top" Height="36" Width="49" Grid.Column="1"/>
             <Image x:Name="Image1" HorizontalAlignment="Left" Height="64" Margin="0,665,0,-6" Source="/Assets/Ad1_Title.png" VerticalAlignment="Top" Width="55"/>
-            <TextBlock x:Name="Title1" HorizontalAlignment="Left" Margin="67,661,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" FontSize="24">
+            <TextBlock x:Name="Title1" HorizontalAlignment="Left" Margin="67,661,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" FontSize="24" Grid.ColumnSpan="2">
             	<Run FontWeight="Bold" Text="Mitchell's Fish Market"/>
             </TextBlock>
-            <Button x:Name="Delete1" Content="" HorizontalAlignment="Left" Margin="337,657,0,-6" VerticalAlignment="Top" Height="72" Width="119" Click="Button_Click_4" Background="#FF210202"/>
-            <Image x:Name="DeleteImage1" HorizontalAlignment="Left" Height="34" Margin="371,676,0,0" Source="/Assets/Dislike.png" VerticalAlignment="Top" Width="46" RenderTransformOrigin="1.167,1.341"/>
+            <Button x:Name="Delete1" Content="" HorizontalAlignment="Left" Margin="119.659,657,0,-6" VerticalAlignment="Top" Height="72" Width="119" Click="Button_Click_4" Background="#FF210202" Grid.Column="1"/>
+            <Image x:Name="DeleteImage1" HorizontalAlignment="Left" Height="34" Margin="153.659,676,0,0" Source="/Assets/Dislike.png" VerticalAlignment="Top" Width="46" RenderTransformOrigin="1.167,1.341" Grid.Column="1"/>
             <TextBlock x:Name="Phone1" HorizontalAlignment="Left" Margin="60,693,0,0" TextWrapping="Wrap" Text=" (202) 580-8889 " VerticalAlignment="Top"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Width="436" Height="38" Opacity="0" BorderThickness="0" Click="Button_Click_2" Grid.ColumnSpan="2"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="446" Height="39" Opacity="0" BorderThickness="0" Click="Button_Click_1" Grid.ColumnSpan="2"/>
 
         </Grid>
     </Grid>

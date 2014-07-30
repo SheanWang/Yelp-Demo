@@ -44,8 +44,8 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image HorizontalAlignment="Left" Height="713" VerticalAlignment="Top" Width="456" Source="/Assets/MainPage.png"/>
-            <Button Content="" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="436" Height="53" Opacity="0" BorderThickness="0" Click="Button_Click_1"/>
+            <Image Height="698" VerticalAlignment="Top" Source="/Assets/MainPageNew.png" Stretch="Fill" Margin="0,-41,0,0"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top" Width="189" Height="163" Opacity="0" BorderThickness="0" Click="Button_Click_1"/>
             <TextBlock x:Name="Location1" HorizontalAlignment="Left" Margin="239,693,0,-6" TextWrapping="Wrap" Text="1 km" VerticalAlignment="Top" Height="36" Width="49"/>
             <Image x:Name="Image1" HorizontalAlignment="Left" Height="64" Margin="0,665,0,-6" Source="/Assets/Ad1_Title.png" VerticalAlignment="Top" Width="55"/>
             <TextBlock x:Name="Title1" HorizontalAlignment="Left" Margin="67,661,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" FontSize="24">
@@ -54,7 +54,6 @@
             <Button x:Name="Delete1" Content="" HorizontalAlignment="Left" Margin="337,657,0,-6" VerticalAlignment="Top" Height="72" Width="119" Click="Button_Click_4" Background="#FF210202"/>
             <Image x:Name="DeleteImage1" HorizontalAlignment="Left" Height="34" Margin="371,676,0,0" Source="/Assets/Dislike.png" VerticalAlignment="Top" Width="46" RenderTransformOrigin="1.167,1.341"/>
             <TextBlock x:Name="Phone1" HorizontalAlignment="Left" Margin="60,693,0,0" TextWrapping="Wrap" Text=" (202) 580-8889 " VerticalAlignment="Top"/>
-            <Button Content="" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" Width="436" Height="58" Opacity="0" BorderThickness="0" Click="Button_Click_2"/>
 
         </Grid>
 
