@@ -46,7 +46,7 @@ namespace Yelp
 
             BuildAds();
 
-            dt.Interval = new TimeSpan(0, 0, 0, 0, 5000); // 500 Milliseconds
+            dt.Interval = new TimeSpan(0, 0, 0, 0, 1000); // 500 Milliseconds
             dt.Tick += new EventHandler(dt_Tick);
             dt.Start();
         }
