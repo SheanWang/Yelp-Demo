@@ -25,7 +25,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image HorizontalAlignment="Right" Height="723" VerticalAlignment="Top" Width="456" Source="/Assets/Page2.png"/>
+            <Image HorizontalAlignment="Right" Height="706" VerticalAlignment="Top" Width="465" Source="/Assets/Page2New.png" Stretch="Fill" Margin="0,-41,-9,0"/>
             <TextBlock x:Name="Location1" HorizontalAlignment="Left" Margin="239,693,0,0" TextWrapping="Wrap" Text="1 km" VerticalAlignment="Top" Height="27" Width="93"/>
             <Image x:Name="Image1" HorizontalAlignment="Left" Height="64" Margin="0,665,0,-6" Source="/Assets/Ad1_Title.png" VerticalAlignment="Top" Width="55"/>
             <TextBlock x:Name="Title1" HorizontalAlignment="Left" Margin="67,661,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" FontSize="24">

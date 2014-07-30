@@ -1,21 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Net;
-using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Yelp.Resources;
 
 namespace Yelp
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class Page3 : PhoneApplicationPage
     {
         System.Windows.Threading.DispatcherTimer dt = new System.Windows.Threading.DispatcherTimer();
 
@@ -44,14 +40,12 @@ namespace Yelp
 
         int i = 0;
 
-        // Constructor
-        public MainPage()
+        public Page3()
         {
             InitializeComponent();
 
-            // Sample code to localize the ApplicationBar
             BuildAds();
-            
+
             dt.Interval = new TimeSpan(0, 0, 0, 0, 5000); // 500 Milliseconds
             dt.Tick += new EventHandler(dt_Tick);
             dt.Start();
@@ -80,7 +74,12 @@ namespace Yelp
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Page3.xaml", UriKind.Relative)); 
+            NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.Relative)); 
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative)); 
         }
 
         private void BuildAds()
@@ -104,21 +103,5 @@ namespace Yelp
 
             dt.Stop();
         }
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }
